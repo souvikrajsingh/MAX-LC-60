@@ -2,6 +2,7 @@ package com.souvik.REV;
 
 
 //https://leetcode.com/problems/missing-number/
+//Amazon Question
 
 import java.util.Arrays;
 
@@ -16,7 +17,7 @@ public class LC_MissingNumber_268 {
         int i = 0;
          while(i < nums.length){
              int correct = nums[i];
-             if(nums[i] < nums.length && nums[correct] != nums[i]){
+             if( nums[correct] != nums[i]){
                  swap(nums, i , correct);
              }
              else
